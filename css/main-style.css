@@ -1,6 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
 #test {
-    width: 100px;
     height: 100px;
+    width: 100px;
     background: purple;
     border-radius: 8px 8px;
+}
+
+/* Vertical Navigation Bar */
+#side-nav {
+    top: 0%;
+    height: 100%;
+    width: 15%;
+    z-index: 1;
+    background: gray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    position: absolute;
+    display: none;
+}
+
+#side-nav a {
+    transition: 0.3s;
+}
+
+#side-nav #close-nav-button {
+    top: 2%;
+    left: 90%;
+    position: absolute;
+    display: inline-block;
+}
+
+#open-nav-button {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+/* Page Area */
+#main-container {
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    display: inline-block;
 }

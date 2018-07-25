@@ -4,9 +4,17 @@
         <meta charset="UTF-8">
         <title>Chris Nguyen's web development playground</title>
         <link rel="stylesheet" href="css/main-style.css" />
-        <link rel="script" href="js/script.js" />
+        <script src="js/script.js"></script>
     </head>
     <body>
-        <button id="test" onclick="test-javascript()" />
+        <!--Side Navigation Bar-->
+        <div id="side-nav">
+            <a id="close-nav-button" onclick="closeNav()">&times;</a>
+        </div>
+
+        <!--Main Page-->
+        <div id="main-container">
+            <span id="open-nav-button" onclick="openNav()">&#9776;</span>
+        </div>
     </body>
 </html>
