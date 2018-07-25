@@ -2,13 +2,13 @@
 
 /*
     - Remove open-nav-button
-    - Push main-container 15% to the left
     - Display side navigation
+    - Push main-container 15% to the left
  */
 openNav = function () {
     document.getElementById('open-nav-button').style.display = 'none';
+    document.getElementById('side-nav').style.width = '15%';
     document.getElementById('main-container').style.marginLeft = '15%';
-    document.getElementById('side-nav').style.display = 'inline-block';
 };
 
 /*
@@ -19,5 +19,5 @@ openNav = function () {
 closeNav = function () {
     document.getElementById('open-nav-button').style.display = 'inline';
     document.getElementById('main-container').style.marginLeft = '0%';
-    document.getElementById('side-nav').style.display = 'none';
+    document.getElementById('side-nav').style.width = '0%';
 };
